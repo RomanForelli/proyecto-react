@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "idCategoria": 1,
+        "nombre": "Lavarropas Semiautomatico Silent 4051",
+        "marca": "Codini",
+        "descripcion": "Carga superior de 10 kg. Incluye 6 programas. Es apto para lavar con agua fría. Tambor de plástico. Las imágenes pueden ser ilustrativas. Comodidad y practicidad para tu hogar.",
+        "precio": 60000,
+        "stock": 20,
+        "img": "lavarropa.jpg"
+    },
+    {
+        "id": 2,
+        "idCategoria": 2,
+        "nombre": "Ropero de Pino",
+        "marca": "Siempre Vendo",
+        "descripcion": "Ropero En Pino Macizo 2 Puertas De 80 Cm De Ancho. Medidas : 180*80*50",
+        "precio": 20000,
+        "stock": 30,
+        "img": "roperodepino.jpg"
+    },
+    {
+        "id": 3,
+        "idCategoria": 1,
+        "nombre": "Plancha Vapor PV-9020",
+        "marca": "Crivel",
+        "descripcion": " Golpe de vapor y rociador. Gran caudal de vapor. Regulable. Potencia 1300 watts. Control de temperatura para cada tipo de tela. Base antiadherente. Indicador luminoso de encendido. Cable multidireccional. Fabricado en Argentina Garantía 1 año",
+        "precio": 10000,
+        "stock": 50,
+        "img": "plancha.jpg"
+    }
+]
