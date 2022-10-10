@@ -41,5 +41,6 @@ body {
     transition: all 0.5s;
 }
 
-
-
+.tarjetaDetalle {
+    font-size: 1.8rem;
+}

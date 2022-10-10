@@ -11,7 +11,7 @@ const ItemListContainer = () => {
 
     return (
     <>
-        <div className='container d-felx justify-content-center h-100'>
+        <div className='container d-flex justify-content-center h-100'>
             <div className='row'>
                 <MostrarProductos/>
             </div>

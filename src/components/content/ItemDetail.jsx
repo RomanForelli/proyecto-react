@@ -23,9 +23,9 @@ const onAdd = (cantidad) => {
     
     return (
         <>
-        <div className='container'>
-            <div className='row'>
-                <div className="card" >
+        <div className='container d-flex justify-content-center h-100'>
+            <div className='row align-item-center'>
+                <div className="card tarjeraDetalle col-md-8 m-4 text-center " style={{width: '80vh',}}>
                     <div className="">
                         <img src={`/img/${detalle.img}`} className="img-fluid rounded-start" alt={detalle.nombre} />
                     </div>

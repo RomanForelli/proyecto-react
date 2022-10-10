@@ -18,7 +18,9 @@ const MostrarProductos = () => {
                     <p className="card-text"><strong>Precio:</strong>  {producto.precio}</p>
                     <p className="card-text"><strong>Marca:</strong>  {producto.marca}</p>
                     <p className="card-text"><strong>Stock:</strong>  {producto.stock}</p>
+                    <div className='justify-content-center align-item-center d-flex'>
                     <Link to={"/ItemDetail/" + producto.id} className="btn btn-primary">Ver Producto</Link>
+                    </div>
                     </div>
                 </div>)
             return productosCards            
