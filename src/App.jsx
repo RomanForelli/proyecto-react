@@ -8,7 +8,7 @@ import Ofertas from './components/content/Ofertas';
 import Carrito from './components/content/Carrito'
 import Nosotros from './components/content/Nosotros';
 import Footer from './components/content/Footer'
-import Producto from './components/content/ItemDetail';
+import Producto from './components/content/Producto';
 import Categoria from './components/content/Categoria';
 
 

@@ -2,7 +2,7 @@ import React from 'react';
 import ItemCount from '../layouts/itemCount';
 
 
-const ItemDetail = (producto) => {
+const ItemDetail = ({producto}) => {
     console.log(producto)
     
 
