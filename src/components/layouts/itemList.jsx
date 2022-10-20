@@ -4,9 +4,10 @@ import "../../styles/App.css"
 import { consultarBDD } from './consultarBDD';
 
 
+
 const ItemList = () => {
     const [productos, setProductos] = useState([]);
-
+    
     useEffect(() => {
         consultarBDD('/productos.json').then(productos => {
             const productosCards = productos.map( producto =>             

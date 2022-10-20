@@ -10,10 +10,10 @@ const Producto = () => {
     useEffect(() => {
 
         consultarBDD("/productos.json").then(productos =>{
-            console.log(productos)
+            
             const producto1 = productos.find(productoArray => productoArray.id === parseInt(id))
             setProducto(producto1)
-            console.log(producto1)
+            
         })
 }, [id]);
 
