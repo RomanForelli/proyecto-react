@@ -10,6 +10,7 @@ import Nosotros from './components/content/Nosotros';
 import Footer from './components/content/Footer'
 import Producto from './components/content/Producto';
 import Categoria from './components/content/Categoria';
+import ErrorPagina from './components/layouts/errorPagina';
 
 
 
@@ -26,6 +27,7 @@ const App = () => {
             <Route path="/Ofertas" element={<Ofertas/>} />
             <Route path="/Carrito" element={<Carrito/>} />
             <Route path="/Nosotros" element={<Nosotros/>} />
+            <Route path="*" element={<ErrorPagina/>} />
           </Routes>
           <Footer/>
         </BrowserRouter>

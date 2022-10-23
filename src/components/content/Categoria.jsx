@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react';
+import {useState, useEffect, useContext} from 'react';
 import React from 'react';
 import { consultarBDD } from '../layouts/consultarBDD';
 import { Link, useParams } from 'react-router-dom';

@@ -1,26 +1,12 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState,useContext } from 'react';
+import { CarritoContext } from '../../CarritoContext';
 
 
 const ItemDetail = ({producto}) => {
     const [cantidad, setCantidad] = useState(1);
 
-    const carrito = []
-
-    const agregarAlCarrito = (prod, cant) => {
-        let indice = carrito.findIndex(producto => producto.id === parseInt(prod.id))
-
-        const prodCarrito = { id: producto.id, cantidad: cant}
-
-        if(indice != -1) {
-            carrito[indice] = prodCarrito
-        } else {
-            carrito.push(prodCarrito)
-        }
-        console.log(carrito)
-    }
-
-    
+    const {carrito, agregarProducto, eliminarProducto} = useContext(CarritoContext) 
 
     const cantProducto = (operacion) => {
         if(operacion == "+"){
@@ -34,10 +20,6 @@ const ItemDetail = ({producto}) => {
         }
 
     }
-
-
-    
-    
     
     return (
         <>
@@ -58,14 +40,12 @@ const ItemDetail = ({producto}) => {
                         <button className="btn btn-primary" onClick={() => cantProducto("-")}> - </button>
                         <button className="btn btn-primary"  onClick={() => cantProducto("+")}> + </button>
                         <div>
-                        <button className="btn btn-primary" onClick={ () => agregarAlCarrito(producto, cantidad)} > Agregar al carrito</button>
+                        <button className="btn btn-primary" onClick={ () => agregarProducto(producto, cantidad)} > Agregar al carrito</button>
                         </div>
                         </div>
                     </div>                    
                 </div>
             </div>
-        
-
         </>
     );
 }
