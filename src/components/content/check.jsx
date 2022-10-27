@@ -12,7 +12,7 @@ const Check = () => {
 
     return (
         <>
-                <div className="container">  
+            <div className="container">  
         <form onSubmit={consultarCompra} ref={datosCompra} className="col-md-6">
         
         <div className="mb-3">
