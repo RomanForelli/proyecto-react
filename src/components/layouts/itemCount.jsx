@@ -1,32 +1,36 @@
 import "../../styles/App.css";
+import React, {useContext, useState} from 'react';
+import { CarritoContext } from '../../CarritoContext';
 
-import React, {useEffect, useState} from 'react';
 
-const ItemCount = ({initial, stock, onAdd}) => {
-    const [contador, setContador] = useState(parseInt(initial));
+const ItemCount = ({producto}) => {
 
-const sumar = () => {
-    setContador(contador + 1)
-}
-const restar = () => {
-    setContador(contador - 1)
-}
+    const {carrito, agregarProducto, eliminarProducto} = useContext(CarritoContext) 
 
-useEffect( () => {
-    setContador(parseInt(initial))
+    const [cantidad, setCantidad] = useState(1);
+    const cantProducto = (operacion) => {
+        if(operacion == "+"){
+            if(cantidad < producto[1].stock) {
+                setCantidad(cantidad + 1)
+            }
+        } else {
+            if (cantidad > 1) {
+                setCantidad(cantidad - 1)
+            }
+        }
 
-}, [initial])
+    }
 
 
     return (
         <>
             <div className="counter">
-                <button disabled={contador <= 0} onClick={restar}> - </button>
-                <span> {contador} </span>
-                <button disabled={contador >= stock} onClick={sumar}> + </button>
-                <div>
-                <button disabled={contador <= 0} onClick={ () => onAdd(contador)} > Agregar al carrito</button>
-                </div>
+                        <p className='card-text'>{cantidad}</p>
+                        <button className="btn btn-primary" onClick={() => cantProducto("-")}> - </button>
+                        <button className="btn btn-primary"  onClick={() => cantProducto("+")}> + </button>
+                        <div>
+                        <button className="btn btn-primary" onClick={ () => agregarProducto(producto, cantidad)} > Agregar al carrito</button>
+                        </div>
             </div>
             
         </>

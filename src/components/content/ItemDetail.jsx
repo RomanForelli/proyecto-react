@@ -1,25 +1,9 @@
 import React from 'react';
-import { useState,useContext } from 'react';
-import { CarritoContext } from '../../CarritoContext';
+import ItemCount from '../layouts/itemCount';
 
 
 const ItemDetail = ({producto}) => {
-    const [cantidad, setCantidad] = useState(1);
-
-    const {carrito, agregarProducto, eliminarProducto} = useContext(CarritoContext) 
-
-    const cantProducto = (operacion) => {
-        if(operacion == "+"){
-            if(cantidad < producto[1].stock) {
-                setCantidad(cantidad + 1)
-            }
-        } else {
-            if (cantidad > 1) {
-                setCantidad(cantidad - 1)
-            }
-        }
-
-    }
+    
     
     return (
         <>
@@ -35,14 +19,7 @@ const ItemDetail = ({producto}) => {
                         <p className="card-text"><strong>Marca:</strong> {producto[1].marca}</p>
                         <p className="card-text"><strong>Stock:</strong> {producto[1].stock}</p>
                         <p className="card-text">{producto[1].descripcion}</p>
-                        <div className="counter">
-                        <p className='card-text'>{cantidad}</p>
-                        <button className="btn btn-primary" onClick={() => cantProducto("-")}> - </button>
-                        <button className="btn btn-primary"  onClick={() => cantProducto("+")}> + </button>
-                        <div>
-                        <button className="btn btn-primary" onClick={ () => agregarProducto(producto, cantidad)} > Agregar al carrito</button>
-                        </div>
-                        </div>
+                        <ItemCount/>
                     </div>                    
                 </div>
             </div>
