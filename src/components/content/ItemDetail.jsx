@@ -10,7 +10,7 @@ const ItemDetail = ({producto}) => {
 
     const cantProducto = (operacion) => {
         if(operacion == "+"){
-            if(cantidad < producto.stock) {
+            if(cantidad < producto[1].stock) {
                 setCantidad(cantidad + 1)
             }
         } else {
@@ -27,14 +27,14 @@ const ItemDetail = ({producto}) => {
             <div className='row align-item-center'>
                 <div className="card tarjeraproducto col-md-8 m-4 text-center " style={{width: '80vh',}}>
                     <div className="">
-                        <img src={"/img/" + producto.img} className="img-fluid rounded-start" alt={producto.nombre} />
+                        <img src={producto[1].img} className="img-fluid rounded-start" alt={producto[1].nombre} />
                     </div>
                     <div className="card-body">
-                        <h4 className="card-title">{producto.nombre}</h4>
-                        <p className="card-text"><strong>Precio:</strong> {producto.precio}</p>
-                        <p className="card-text"><strong>Marca:</strong> {producto.marca}</p>
-                        <p className="card-text"><strong>Stock:</strong> {producto.stock}</p>
-                        <p className="card-text">{producto.descripcion}</p>
+                        <h4 className="card-title">{producto[1].nombre}</h4>
+                        <p className="card-text"><strong>Precio:</strong> {producto[1].precio}</p>
+                        <p className="card-text"><strong>Marca:</strong> {producto[1].marca}</p>
+                        <p className="card-text"><strong>Stock:</strong> {producto[1].stock}</p>
+                        <p className="card-text">{producto[1].descripcion}</p>
                         <div className="counter">
                         <p className='card-text'>{cantidad}</p>
                         <button className="btn btn-primary" onClick={() => cantProducto("-")}> - </button>

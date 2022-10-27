@@ -1,12 +1,20 @@
-import React from 'react';
+import React, {useState, useContext} from 'react';
 import {Link} from 'react-router-dom';
+import { CarritoContext } from '../../CarritoContext';
 import Dropdown from '../layouts/dropdown';
+import Producto from './Producto';
+
+
 
 
 const Navbar = ({contador}) => {
 
-    const listaDropdown = ["Electrodomesticos", "Muebles", "Habitación"];
+    const listaDropdown = ["Electrodomesticos", "Muebles", "Habitación", "Otros"];
 
+    const {carrito} = useContext(CarritoContext)
+
+    
+    const itemCount = carrito.reduce((counter, producto) => counter += producto.cantidad, 0)
 
     return (
         <>
@@ -31,7 +39,7 @@ const Navbar = ({contador}) => {
                     </li> 
                     <Dropdown lista = {listaDropdown}/>
                     </ul>
-                    <Link className="btn btn-primary my-2 my-sm-0 m-2" to="/Carrito"><i className="fa-sharp fa-solid fa-cart-shopping"></i> </Link>
+                    <Link className="btn btn-primary my-2 my-sm-0 m-2" to="/Carrito">{itemCount}   <i className="fa-sharp fa-solid fa-cart-shopping"></i> </Link>
                     </div>
                 </div>
             </nav>
