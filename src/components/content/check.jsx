@@ -1,6 +1,22 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import { Link } from 'react-router-dom';
+import { CarritoContext } from '../../CarritoContext';
+import swal from "sweetalert2";
+
 
 const Check = () => {
+
+    const { vaciarCarrito } = useContext(CarritoContext)
+
+    const finalizarCompra = () => {
+
+        swal.fire (
+            'Compra Realizada', 'Gracias por confiar en nosotros!', 'success'
+        )
+
+        vaciarCarrito()
+
+    }
 
     const datosFormulario = React.useRef()
 
@@ -14,10 +30,12 @@ const Check = () => {
     } 
 
 
+
     return (
         <>
-    <div className="container">  
-        <form onSubmit={consultarFormulario} ref={datosFormulario} className="col-md-6">
+        <div className='row justify-content-center mt-5 '>
+
+        <form onSubmit={consultarFormulario} ref={datosFormulario} className="col-md-4">
         
         <div className="mb-3">
             <label htmlFor="Nombre" className="form-label">Nombre:</label>
@@ -43,9 +61,13 @@ const Check = () => {
             <label htmlFor="Direccion" className="form-label">Direccion:</label>
             <input type="text" className="form-control" name="Direccion" aria-describedby="Direccion" />
         </div>
-        <button type="submit" className="btn btn-primary">Enviar Consulta</button>
+        <div className='mb-3 justify-content-center text-center'>
+            <Link className="btn btn-primary m-2" to="/" alt='Siempre Vendo'> Volver al Home</Link>
+            <Link className="btn btn-primary m-2" onClick={() => finalizarCompra() } to="/" alt='Siempre Vendo'> Finalizar Compra</Link>
+        </div>  
         </form>
-    </div>  
+
+        </div>  
 
         </>
     );

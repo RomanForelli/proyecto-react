@@ -7,13 +7,14 @@
 }
 
 body {
-    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 
 }
 
 .btn_carrito {
     border-radius: 8px;
     transition: all 0.25s;
+    font-size: 1.3rem;
 }
 
 .btn_carrito:hover{
@@ -21,7 +22,12 @@ body {
     transition: all 0.5s;
 }
 
+.navbar {
+    padding: 5px;
+}
+
 .nav-link {
+    font-size: 1rem;
     border-radius: 8px;
     transition: all 0.25s;
 }
@@ -33,7 +39,7 @@ body {
 
 .card {
     width: 320px;
-    height: 480px;
+    height: 460px;
     border-radius: 11px;
     overflow: hidden;
     margin: 20px;
@@ -41,7 +47,7 @@ body {
     padding: 0px;
 }
 .card h4 {
-    font-size: 1rem;
+    font-size: 1.4rem;
     overflow: hidden;
 }
 .card img {
@@ -64,7 +70,13 @@ body {
 .tarjetaDetalle {
     font-size: 1rem;
 
-}
-.tarjetaDetalle_img {
 
 }
+
+
+/* .btn {
+    padding: 8px;
+    border-radius: 8px;
+    transition: all 0.25s;
+    font-size: 1rem;
+} */

@@ -33,9 +33,9 @@ const ItemCount = ({stock, producto,}) => {
                         <p className='card-text m-3'>{cantidad}</p>
                         <button className="btn btn-primary"  onClick={() => cantProducto("+")}> + </button>
                         </div>
-                        <div className="text-center">
+                        <div className="d-flex justify-content-center text-center">
                         <Link className="btn btn-primary m-2" to="/" alt='Siempre Vendo'> Volver al Home</Link>
-                        <button className="btn btn-primary m.2" onClick={ () => agregarProducto(producto, cantidad)} > Agregar al carrito</button>
+                        <button className="btn btn-primary m-2" onClick={ () => agregarProducto(producto, cantidad)} > Agregar al carrito</button>
                         </div>
             </div>
         </>

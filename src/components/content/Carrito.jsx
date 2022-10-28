@@ -51,10 +51,12 @@ const Carrito = () => {
     } else {
         return (
             <>
-            <div className='row' style={{height: '80vh',}}>
-            <div className="d-flex justify-content-center align-items-center text-center" >
-            <h1>No existen elementos en el carrito</h1>            
-            <Link className="btn btn-primary" to="/" alt='Siempre Vendo'> Volver al Home</Link>
+            <div className='row' style={{height: '70vh',}}>
+            <div className="row d-flex justify-content-center align-items-center text-center" >
+            <h1>No existen elementos en el carrito</h1>
+            <div className='d-flex justify-content-center align-items-center text-center'>
+            <Link className="btn btn-primary " to="/" alt='Siempre Vendo'> Volver al Home</Link>
+            </div>         
             </div>
             </div>
             </>

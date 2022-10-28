@@ -8,12 +8,12 @@ const ItemDetail = ({producto}) => {
 
     return (
         <>
-            <div className="card tarjetaDetalle"  style={{width: '140vh',}}>
+            <div className="card tarjetaDetalle"  style={{width: '150vh',}}>
             <div className="row">
-                <div className="col-md-6 d-flex align-items-center justify-content-center">
+                <div className="col-md-5 d-flex align-items-center justify-content-center">
                 <img src={producto[1].img} className="img-fluid tarjetaDetalle_img" alt={producto[1].nombre} />
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-7">
                 <div className="card-body">
                 <h2 className="card-title">{producto[1].nombre}</h2>
                         <p className="card-text"><strong>Precio:</strong> {producto[1].precio}</p>

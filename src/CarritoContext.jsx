@@ -27,7 +27,7 @@ const CarritoProvider = (props) => {
     const eliminarProducto = (prod) => {
         const aux = carrito
         
-        let indice = aux.findIndex(producto => producto.id == prod.key)
+        let indice = aux.findIndex(producto => producto.id == prod.id)
 
         aux.splice(indice, 1)
         setCarrito(structuredClone(aux))
@@ -37,9 +37,10 @@ const CarritoProvider = (props) => {
         return setCarrito([])
     }
 
+
     return (
         <>
-            <CarritoContext.Provider value={{carrito, agregarProducto, eliminarProducto, vaciarCarrito}}>
+            <CarritoContext.Provider value={{carrito, agregarProducto, eliminarProducto, vaciarCarrito,}}>
                 {props.children}
             </CarritoContext.Provider>
         </>   
