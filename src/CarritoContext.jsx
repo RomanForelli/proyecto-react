@@ -1,7 +1,5 @@
 import React, {useState, createContext} from 'react';
 
-
-
 const CarritoContext = createContext()
 
 const CarritoProvider = (props) => {

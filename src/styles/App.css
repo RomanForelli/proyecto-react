@@ -1,8 +1,9 @@
 .counter {
-    margin: auto;
-    padding: 1rem;
-    text-align: center;
-    margin: 1rem;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
 }
 
 body {
@@ -42,5 +43,8 @@ body {
 }
 
 .tarjetaDetalle {
-    font-size: 1.8rem;
+    font-size: 1rem;
+}
+.tarjetaDetalle_img {
+  
 }

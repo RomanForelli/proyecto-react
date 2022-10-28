@@ -1,11 +1,14 @@
 import "../../styles/App.css";
-import React, {useContext, useState} from 'react';
-import { CarritoContext } from '../../CarritoContext';
+import React, {useState} from 'react';
+import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { CarritoContext } from "../../CarritoContext";
 
 
-const ItemCount = ({stock, producto}) => {
 
-    const {carrito, agregarProducto, eliminarProducto} = useContext(CarritoContext) 
+const ItemCount = ({stock, producto,}) => {
+
+    const {agregarProducto} = useContext(CarritoContext)
 
     const [cantidad, setCantidad] = useState(1);
     const cantProducto = (operacion) => {
@@ -24,15 +27,17 @@ const ItemCount = ({stock, producto}) => {
 
     return (
         <>
-            <div className="counter">
-                        <button className="btn btn-primary" onClick={() => cantProducto("-")}> - </button>
+            <div className="row">
+                        <div className="d-flex justify-content-center text-center">
+                        <button className="btn btn-primary " onClick={() => cantProducto("-")}> - </button>
                         <p className='card-text m-3'>{cantidad}</p>
                         <button className="btn btn-primary"  onClick={() => cantProducto("+")}> + </button>
-                        <div>
-                        <button className="btn btn-primary" onClick={ () => agregarProducto(producto, cantidad)} > Agregar al carrito</button>
+                        </div>
+                        <div className="text-center">
+                        <Link className="btn btn-primary m-2" to="/" alt='Siempre Vendo'> Volver al Home</Link>
+                        <button className="btn btn-primary m.2" onClick={ () => agregarProducto(producto, cantidad)} > Agregar al carrito</button>
                         </div>
             </div>
-            
         </>
     );
 }
