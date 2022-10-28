@@ -19,7 +19,7 @@ const Dropdown = ({lista}) => {
     return (
         <>
             <li className="nav-item dropdown">
-            <button className="nav-link dropdown-toggle btn btn-secondary" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <button className="nav-link dropdown-toggle btn btn-primary" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
             <i className="fas fa-list"></i>
             </button>
             <div className="dropdown-menu">

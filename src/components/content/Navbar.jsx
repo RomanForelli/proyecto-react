@@ -18,7 +18,7 @@ const Navbar = ({contador}) => {
 
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-primary bg-primary">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container-fluid">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon" />
@@ -39,7 +39,7 @@ const Navbar = ({contador}) => {
                     </li> 
                     <Dropdown lista = {listaDropdown}/>
                     </ul>
-                    <Link className="btn btn-primary my-2 my-sm-0 m-2" to="/Carrito">{itemCount}   <i className="fa-sharp fa-solid fa-cart-shopping"></i> </Link>
+                    <Link className="btn_carrito btn btn-primary my-2 my-sm-0 m-2" to="/Carrito">{itemCount}   <i className="fa-sharp fa-solid fa-cart-shopping"></i> </Link>
                     </div>
                 </div>
             </nav>

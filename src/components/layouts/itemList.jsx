@@ -13,7 +13,7 @@ const ItemList = () => {
     useEffect(() => {
         getProductos().then(productos => {
             const productosCards = productos.map( producto =>             
-                <div className="card tarjera col-md-4 m-4" key={producto[0]} style={{width: '20rem'}}>
+                <div className="card tarjera col-md-4 m-4" key={producto[0]} >
                     <img className="card-img-top img-fluid" src={producto[1].img} alt={producto[1].nombre} />
                     <div className="card-body flex">
                     <h4 className="card-title text-wrap">{producto[1].nombre}</h4>
