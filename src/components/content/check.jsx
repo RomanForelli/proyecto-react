@@ -33,10 +33,14 @@ const Check = () => {
 
     return (
         <>
-        <div className='row justify-content-center mt-5 '>
+        <div className='row justify-content-center m-5'>
 
-        <form onSubmit={consultarFormulario} ref={datosFormulario} className="col-md-4">
-        
+        <form onSubmit={consultarFormulario} ref={datosFormulario} className="col-md-4 check">
+            <div className='d-flex justify-content-center text-center m-5'>
+            <img  className='imgform' src="https://firebasestorage.googleapis.com/v0/b/proyectoreact-forelli.appspot.com/o/imagenes%2Flogo1.png?alt=media&token=c4ed3b44-12ac-4d84-8435-f29bc64f0859" alt="Siempre Vendo"/>
+            <h3 className=' '> Para finalizar la compra complete el siguiente formulario con sus datos:</h3>
+            </div>
+            
         <div className="mb-3">
             <label htmlFor="Nombre" className="form-label">Nombre:</label>
             <input type="text" className="form-control" name="Nombre" aria-describedby="Nombre" />
@@ -48,10 +52,6 @@ const Check = () => {
         <div className="mb-3">
             <label htmlFor="email" className="form-label">Email:</label>
             <input type="email" className="form-control" name="email" />
-        </div>
-        <div className="mb-3">
-            <label htmlFor="email2" className="form-label">Repita su Email:</label>
-            <input type="email" className="form-control" name="email2" />
         </div>
         <div className="mb-3">
             <label htmlFor="Telefono" className="form-label">Telefono</label>

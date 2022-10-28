@@ -8,8 +8,8 @@ const ItemListContainer = () => {
 
     return (
     <>
-        <div className='container d-flex justify-content-center h-100'>
-            <div className='row'>
+        <div className='container'>
+            <div className='row d-flex justify-content-center align-item-center text-center'>
                 <ItemList/>
             </div>
         </div>

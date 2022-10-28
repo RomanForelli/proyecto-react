@@ -16,7 +16,7 @@ const ItemDetail = ({producto}) => {
                 <div className="col-md-7">
                 <div className="card-body">
                 <h2 className="card-title">{producto[1].nombre}</h2>
-                        <p className="card-text"><strong>Precio:</strong> {producto[1].precio}</p>
+                        <p className="card-text"><strong>Precio:</strong> ${producto[1].precio}</p>
                         <p className="card-text"><strong>Marca:</strong> {producto[1].marca}</p>
                         <p className="card-text"><strong>Stock:</strong> {producto[1].stock}</p>
                         <p className="card-text"><strong>Caracteristicas:</strong></p>

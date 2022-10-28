@@ -17,9 +17,9 @@ const Carrito = () => {
                     <img className="card-img-top img-fluid" src={producto.img} alt={producto.nombre} />
                     <div className="card-body flex">
                     <h4 className="card-title text-wrap">{producto.nombre}</h4>
-                    <p className="card-text"><strong>Precio:</strong>  {producto.precio}</p>
+                    <p className="card-text"><strong>Precio:</strong>  ${producto.precio}</p>
                     <p className="card-text"><strong>Cantidad:</strong>  {producto.cantidad}</p>
-                    <p className="card-text"><strong>Subtotal:</strong>  {producto.precio * producto.cantidad}</p>
+                    <p className="card-text"><strong>Subtotal:</strong>  ${producto.precio * producto.cantidad}</p>
                     <div className='justify-content-center align-item-center d-flex'>
                     <button className='btn btn-dark' onClick={() => eliminarProducto(producto)}>Eliminar</button>
                     </div>

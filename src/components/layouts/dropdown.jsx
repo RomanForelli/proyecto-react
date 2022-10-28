@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import "../../styles/App.css"
 
 
 
@@ -19,9 +20,9 @@ const Dropdown = ({lista}) => {
     return (
         <>
             <li className="nav-item dropdown">
-            <button className="nav-link dropdown-toggle btn" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <button className="nav-link active dropdown-toggle btn" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
             Categorias</button>
-            <div className="dropdown-menu">
+            <div className="dropdown-menu ">
             {list}
             </div>
             </li>  

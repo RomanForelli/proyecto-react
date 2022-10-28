@@ -23,14 +23,18 @@ body {
 }
 
 .navbar {
-    padding: 5px;
+    padding: 0px;
+    margin: 0px;
+
 }
 
-.nav-link {
+.nav-link{
     font-size: 1rem;
     border-radius: 8px;
     transition: all 0.25s;
+
 }
+
 
 .nav-link:hover{
     box-shadow: 5px 10px 20px 1px;
@@ -80,3 +84,31 @@ body {
     transition: all 0.25s;
     font-size: 1rem;
 } */
+
+.logo {
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 0px;
+    border-radius: 8px;
+}
+.logo:hover {
+    box-shadow: 5px 10px 20px 1px;
+    transition: all 0.5s;
+    color: #e2ebf0;
+
+}
+
+.check {
+    background-color: slategrey;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: all 0.25s;
+    color: black;
+}
+
+.imgform{
+    height: 100px;
+    width: 100px;
+}
