@@ -11,6 +11,12 @@
 <p> Es mi primer trabajo de React Js, es una tienda de venta de productos varios, Para la entrega de Coderhouse. Hay cosas por corregir y mejorar que con el tiempo ire perfeccionando! </p>
 <p> Espero sea de su Agrado y cualquier consulta dejo los medios de contacto! Saludos</p>
 
+<p> Describiendo el trabajo, quiero comentar un poco, en cuanto al Navbar deje distintos items, que no tienen contenido adentro (Nosotros, formulario y ofertas) , pero estan a modo de representacion del routing realizado.</p>
+<p> Boostrap y Css utilizados  con fines de generar una mejor impresion visual pero sin ser la parte principal de del trabajo. el mayor esfuerzo se realizo en el codigo y logica de fondo de la pagina. - con mas tiempo se puede mejorar mucho este punto - </p>
+<p> footer a crear y sumar tambien a futuro.<p>
+<p> Formulario y check, generado a fines demostrativos y de rubricas, no se busco generar una validacion ni un backend.<p> 
+  
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://linkedin.com/in/romanforelli" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="romanforelli" height="30" width="40" /></a>
