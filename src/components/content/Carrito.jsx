@@ -13,7 +13,7 @@ const Carrito = () => {
 
     useEffect(() => {
         const prodMostrar = carrito.map((producto) => 
-                <div className="card tarjera col-12" key={producto.id} /*style={{width: '15rem'}}*/>
+                <div className="card tarjera col-12 " key={producto.id} /*style={{width: '15rem'}}*/>
                     <img className="card-img-top img-fluid" src={producto.img} alt={producto.nombre} />
                     <div className="card-body flex">
                     <h4 className="card-title text-wrap">{producto.nombre}</h4>
@@ -33,8 +33,8 @@ const Carrito = () => {
         return (
             <>
             <div className='container'>
-                <div className="row">
-                    <div className='row d-flex justify-content-center'> 
+                <div className="">
+                    <div className='row d-flex justify-content-center align-item-center text-center '> 
                         {carritoLocal}
                         <h4 className='text-center' >Total: ${total}</h4>
                     </div>

@@ -101,7 +101,9 @@ body {
 }
 
 .check {
-    background-color: slategrey;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
     font-size: 1rem;
     border-radius: 8px;
     transition: all 0.25s;
@@ -111,4 +113,8 @@ body {
 .imgform{
     height: 100px;
     width: 100px;
+}
+
+input:invalid {
+    background-color: pink;
 }

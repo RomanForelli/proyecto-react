@@ -11,7 +11,7 @@ const Categoria = () => {
         getProductos().then(productos => {
             const productosCategoria = productos.filter( producto => producto[1].idCategoria === parseInt(id)) 
             const productosCards = productosCategoria.map( producto =>             
-                <div className="card tarjera col-md-4 m-4" key={producto[0]} /*style={{width: '15rem'}}*/>
+                <div className="card tarjera col-md-4 m-4 d-flex justify-content-center align-item-center text-center" key={producto[0]} /*style={{width: '15rem'}}*/>
                     <img className="card-img-top img-fluid" src={producto[1].img} alt={producto[1].nombre} />
                     <div className="card-body flex">
                     <h4 className="card-title text-wrap">{producto.nombre}</h4>
